@@ -16,5 +16,20 @@ To run the application, type `mvn scala:run`
 
 To run unit-tests, type `mvn test`
 
+sbt by default use scala.jar (version) which sbt was built from
+
+can override with couple way 
+
+* use the version of sbt
+  ./project/buid.properties
+    sbtVersion = 0.13.6
+
+* use scala version 
+  ./build.sbt
+    scalaVersion := "2.11.8"
+
+* within sbt use specified scala version 
+  sbt 
+  > ++ 2.10.4
 
 
